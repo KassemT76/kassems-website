@@ -1,9 +1,10 @@
 
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
+import icon from '../../images/cool.png';
 
 export const Nav = styled.nav`
-  background: #63D471;
+  background: rgb(221, 255, 0);
   height: 85px;
   display: flex;
   justify-content: space-between;
@@ -22,7 +23,7 @@ export const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   &.active {
-    color: #000000;
+    color: rgb(4, 0, 117);
   }
 `;
   
@@ -53,3 +54,8 @@ export const NavMenu = styled.div`
     display: none;
   }
 `;
+export function Icon(){
+  return <img src={icon} alt="a cool icon" width="50" height = "50"/>;
+}
+
+  

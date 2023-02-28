@@ -4,6 +4,7 @@ import {
     NavLink,
     Bars,
     NavMenu,
+    Icon,
 } from './NavElements'
 
 const Navbar = () => {
@@ -12,6 +13,7 @@ const Navbar = () => {
             <Nav>
                 <Bars />
                 <NavMenu>
+                <Icon />
                     <NavLink to ='/about' activeStyle>
                         About
                     </NavLink>

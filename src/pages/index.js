@@ -5,14 +5,15 @@ const Home = () => {
     <div
       style={{
         display: 'flex',
-        justifyContent: 'Right',
-        alignItems: 'Right',
-        height: '100vh'
+        justifyContent: 'Left',
+        alignItems: 'Left',
+        height: '100vh',
+        padding: '10px'
       }}
     >
       <h1 style={{
         color: 'black'
-      }}>Welcome to GeeksforGeeks</h1>
+      }}>Welcome to my Website</h1>
     </div>
   );
 };

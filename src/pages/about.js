@@ -5,12 +5,12 @@ const About = () => {
         <div
         style={{
           display: 'flex',
-          justifyContent: 'Right',
-          alignItems: 'Right',
+          justifyContent: 'Left',
+          alignItems: 'Left',
           height: '100vh'
         }}
       >
-        <h1>Welcome to GeeksforGeeks Events</h1>
+        <h1>About me</h1>
       </div>
     );
 };
