@@ -2,7 +2,6 @@ import React from "react";
 import {
     Nav,
     NavLink,
-    Bars,
     NavMenu,
     Icon,
 } from './NavElements'
@@ -11,14 +10,17 @@ const Navbar = () => {
     return (
         <>
             <Nav>
-                <Bars />
+            <Icon />
                 <NavMenu>
-                <Icon />
+                
+                    <NavLink to ='/' activeStyle>
+                        Home
+                    </NavLink>
                     <NavLink to ='/about' activeStyle>
                         About
                     </NavLink>
-                    <NavLink to ='/' activeStyle>
-                        Home
+                    <NavLink to ='/project' activeStyle>
+                        Project Gallery
                     </NavLink>
                 </NavMenu>
                 
