@@ -1,17 +1,83 @@
+html{
+    background: rgb(0, 3, 41);
+}
 #project {
     height: 100vh;
-    padding: 10px;
     background: rgb(0, 3, 41);
     color: rgb(255,255,255);
-    animation-name: colorChange;
+    animation-name: opacityChange;
     animation-duration: 2s;
 }
 #root {
     background: rgb(0, 3, 41);
 }
+#wallet {
+    display: grid;
+    padding: 50px;
+    row-gap: 50px;
+    column-gap: 50px;
+    text-align: center;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
+    margin-left: 5%;
+    margin-right: 5%;
 
-@keyframes colorChange{
+    background: rgb(140, 127, 255);
+    border: 5px;
+    border-color: aquamarine;
+    border-style: outset;
+    width: 90%;
+    padding: 10px;
+    
+}
+#card1 {
+    grid-row-start: 1;
+}
+#card2 {
+    grid-row-start: 2;
+}
+#card3 {
+    grid-row-start: 3;
+}
+.butt {
+    height: 100%;
+    width: 100%;
+    background-color: lightslategray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+.butt:hover {
+    background-color: aquamarine;
+}
+.card:hover {
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    background-color: aquamarine;
+}
+
+@keyframes opacityChange{
     from {opacity: 0%;}
     to {opacity: 100%;}
+}
+@keyframes colorChange{
+    from {background-color: rgb(140, 127, 255)}
+    to {background-color: rgb(130, 10, 240);}
+}
+.arrow {
+    height: 50%;
+    width: 75%;
+   
+}
+img {  
+    width: 20%;
 }
