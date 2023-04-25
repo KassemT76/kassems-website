@@ -61,6 +61,7 @@ html{
 .butt:hover {
     background-color: aquamarine;
 }
+
 .card:hover {
     animation-name: colorChange;
     animation-duration: 2s;
