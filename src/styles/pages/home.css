@@ -3,7 +3,7 @@
     padding: 10px;
     background: rgb(0, 3, 41);
     color: rgb(255,255,255);
-    animation-name: colorChange;
+    animation-name: opacityChange;
     animation-duration: 2s;
 }
 #root{
@@ -11,7 +11,7 @@
 }
 
 
-@keyframes colorChange{
+@keyframes opacityChange{
     from {opacity: 0%;}
     to {opacity: 100%;}
 }
