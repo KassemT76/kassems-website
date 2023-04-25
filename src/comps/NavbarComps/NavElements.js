@@ -46,7 +46,7 @@ export const NavMenu = styled.div`
   }
 `;
 export function Icon(){
-  return <img src={icon} alt="a cool icon" width="250" height = "250" style={
+  return <img src={icon} alt="a cool icon" width="250" height = "150" style={
     {
       padding: '10px'
     }

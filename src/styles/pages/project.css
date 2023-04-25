@@ -32,7 +32,6 @@ html{
     border-color: aquamarine;
     border-style: outset;
     width: 90%;
-    padding: 10px;
     
 }
 #card1 {
@@ -44,11 +43,15 @@ html{
 #card3 {
     grid-row-start: 3;
 }
+.head {
+    padding: 10px;
+}
 .butt {
     height: 100%;
     width: 100%;
     background-color: lightslategray;
-
+    
+    padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
