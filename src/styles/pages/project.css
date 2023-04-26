@@ -7,6 +7,8 @@ html{
     color: rgb(255,255,255);
     animation-name: opacityChange;
     animation-duration: 2s;
+    padding: 10px;
+    text-align: center;
 }
 #root {
     background: rgb(0, 3, 41);
@@ -27,11 +29,15 @@ html{
     margin-left: 5%;
     margin-right: 5%;
 
-    background: rgb(140, 127, 255);
+    background: rgb(47, 36, 149);
     border: 5px;
-    border-color: aquamarine;
+    border-color: #1BA6E4;
     border-style: outset;
     width: 90%;
+
+    animation-name: colorChangeOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
     
 }
 #card1 {
@@ -45,11 +51,13 @@ html{
 }
 .head {
     padding: 10px;
+    width: 75%;
 }
 .butt {
     height: 100%;
-    width: 100%;
-    background-color: lightslategray;
+    width: 25%;
+    background-color: rgb(67, 101, 135);
+    opacity: 50%;
     
     padding: 0px;
     display: flex;
@@ -59,14 +67,15 @@ html{
     cursor: pointer;
 }
 .butt:hover {
-    background-color: aquamarine;
+    animation-name: colorChangeButton;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .card:hover {
     animation-name: colorChange;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    background-color: aquamarine;
 }
 
 @keyframes opacityChange{
@@ -74,14 +83,26 @@ html{
     to {opacity: 100%;}
 }
 @keyframes colorChange{
-    from {background-color: rgb(140, 127, 255)}
+    from {background-color: rgb(47, 36, 149)}
     to {background-color: rgb(130, 10, 240);}
 }
+@keyframes colorChangeOut{
+    from {background-color: rgb(130, 10, 240)}
+    to {background-color: rgb(47, 36, 149);}
+}
+@keyframes colorChangeButton{
+    from {background-color: rgb(67, 101, 135)}
+    to {background-color: #B500FF;}
+
+    from {opacity: 50%;}
+    to {opacity: 100%;}
+}
 .arrow {
-    height: 50%;
+    height: 25%;
     width: 75%;
    
 }
 img {  
     width: 20%;
+
 }

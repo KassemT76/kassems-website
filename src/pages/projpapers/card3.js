@@ -1,12 +1,12 @@
 import React from "react";
 import '../../styles/pages/cards.css'
 
-const Card1 = () => {
+const Card3 = () => {
     return (
       <div className="cardinfo">
-        <h1>Example 1</h1>
+        <h1> Example 3</h1>
       </div>
     );
 };
 
-export default Card1;
+export default Card3;

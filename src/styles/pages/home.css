@@ -5,11 +5,32 @@
     color: rgb(255,255,255);
     animation-name: opacityChange;
     animation-duration: 2s;
+    text-align: center;
 }
 #root{
     background: rgb(0, 3, 41);
 }
+#walletHome {
+    display: grid;
+    padding: 50px;
+    row-gap: 50px;
+    column-gap: 50px;
+    align-items: center;
+}
+.cardHome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
+    background: rgb(140, 127, 255);
+    border: 5px;
+    border-color: aquamarine;
+    border-style: outset;
+    width: 90%;
+
+    grid-row-start: 1;
+    }
 
 @keyframes opacityChange{
     from {opacity: 0%;}

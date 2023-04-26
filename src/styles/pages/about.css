@@ -5,6 +5,7 @@
     color: rgb(255,255,255);
     animation-name: opacityChange;
     animation-duration: 2s;
+    text-align: center;
 }
 #root{
     background: rgb(0, 3, 41);
