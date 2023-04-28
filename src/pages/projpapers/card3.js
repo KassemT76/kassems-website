@@ -4,7 +4,7 @@ import '../../styles/pages/cards.css'
 const Card3 = () => {
     return (
       <div className="cardinfo">
-        <h1> Example 3</h1>
+        <h1>Example 3</h1>
       </div>
     );
 };
