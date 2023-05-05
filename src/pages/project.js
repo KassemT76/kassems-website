@@ -14,7 +14,7 @@ const Project = () => {
           <div class = "card" id="card1">
             <div class = "head">
               <img src={image} alt="card"></img>
-              <h1>Example 1</h1>
+              <h2>Example 1</h2>
               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             </div>
             <Link to="/project/card1" className="butt">  
@@ -27,7 +27,7 @@ const Project = () => {
           <div class = "card" id="card2">
             <div class = "head">
               <img src={image} alt="card"></img>
-              <h1>Example 2</h1>
+              <h2>Example 2</h2>
               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             </div>
             <Link to="/project/card2" className="butt">  
@@ -40,7 +40,7 @@ const Project = () => {
           <div class = "card" id="card3">
           <div class = "head">
               <img src={image} alt="card"></img>
-              <h1>Example 3</h1>
+              <h2>Example 3</h2>
               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             </div>
             <Link to="/project/card3" className="butt">  

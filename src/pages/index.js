@@ -32,7 +32,7 @@ const Home = () => {
           <button>Learn More!</button>
         </div>
         <div id='projectHome'>
-          <h1>Projects</h1>
+          <h2>Projects</h2>
           <p>Along my journey, I have done a lot of projects</p>
           <div id="gallery">
             <figure>
@@ -50,7 +50,7 @@ const Home = () => {
           </div>
         </div>
         <div id="footer">
-          <h1>Contact me</h1>
+          <h2>Contact me</h2>
           <p>Email: kassemtaha06@gmail.com</p>
         </div>
       </div>

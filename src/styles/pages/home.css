@@ -17,7 +17,7 @@
     margin-top: 0;
     background-image: url("https://lassonde.yorku.ca/eecs/wp-content/uploads/pexels-photo-2061168-1920x1280.jpeg");
 }
-#tit {
+h1 {
     font-size: 120px ;
 }
 #skillsHome {
