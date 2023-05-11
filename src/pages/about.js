@@ -5,25 +5,34 @@ import cool from '../images/cool.png'
 import reacticon from '../images/reacticon.png'
 import suitcase from '../images/Suitcasesvg.svg'
 import down from '../images/down.svg'
-import { isValidDateValue } from "@testing-library/user-event/dist/utils";
-var isCollapsed = true;
+import { Link } from "react-router-dom";
 
-function display(){
-  console.log("Hello");
-  const parent = document.getElementById("skillHolder")
-  const hide = document.getElementById("skillHolder").childNodes[2];
-  const arrow = document.getElementById("skillHolder").childNodes[1].childNodes[0];
-  if (isCollapsed){
-    parent.style.height = "500px"
+function display(id){
+  
+  const parent = document.getElementById(id);
+  const head = parent.childNodes[0]
+  const arrow = parent.childNodes[1];
+  const hide = parent.childNodes[2];
+  
+  console.table(parent.offsetHeight)
+  if (parent.offsetHeight <= 200){
+    parent.style.height = "500px";
+    head.style.height = "160px";
+    arrow.style.height = "40px";
+    hide.style.height = "60%";
+
     hide.style.opacity = "100";
-    arrow.style.transform = "rotate(180deg)";
-    isCollapsed = false;
+
+    arrow.childNodes[0].style.transform = "rotate(180deg)";
   }
   else {
-    parent.style.height = "170px"
+    parent.style.height = "200px"
+    head.style.height = "160px";
+    arrow.style.height = "40px";
+    hide.style.height = "0%";
+
     hide.style.opacity = "0";
-    arrow.style.transform = "rotate(0deg)";
-    isCollapsed = true
+    arrow.childNodes[0].style.transform = "rotate(0deg)";
   }
 
 }
@@ -44,15 +53,102 @@ const About = () => {
               <p>
                 Lmao what skills
               </p>
-              <div id="skillHolder" classname="shownDiv">    
-                <img id="skillImage" src={cool} alt="Java"></img>
-                <div id="arrowContainer" onClick={display}>
-                  <img src={down} id="down" alt="hello"></img>
+              <div id="gallery">
+                <div className="skillHolder" id="one">  
+                  <div id="skillHead">
+                    <img id="skillImage" src={cool} alt="Java"></img>
+                    <p>Hello</p>
+                  </div>   
+                  <div id="arrowContainer" onClick={() => display("one")}>
+                    <img src={down} id="down" alt="hello"></img>
+                  </div>
+                  <div className="hiddenDiv">
+                  <h3> Proficient</h3>
+                    <ul>
+                      <li>Coded alot</li>
+                      <li>Know a lot like: blah, blah, blah</li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="hiddenDiv">
-                  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <div className="skillHolder" id="two">  
+                  <div id="skillHead">
+                    <img id="skillImage" src={cool} alt="Java"></img>
+                    <p>Hello</p>
+                  </div>   
+                  <div id="arrowContainer" onClick={() => display("two")}>
+                    <img src={down} id="down" alt="hello"></img>
+                  </div>
+                  <div className="hiddenDiv">
+                  <h3> Proficient</h3>
+                    <ul>
+                      <li>Coded alot</li>
+                      <li>Know a lot like: blah, blah, blah</li>
+                    </ul>                  
+                  </div>
+                </div>
+                <div className="skillHolder" id="three">  
+                  <div id="skillHead">
+                    <img id="skillImage" src={cool} alt="Java"></img>
+                    <p>Hello</p>
+                  </div>   
+                  <div id="arrowContainer" onClick={() => display("three")}>
+                    <img src={down} id="down" alt="hello"></img>
+                  </div>
+                  <div className="hiddenDiv">
+                    <h3> Proficient</h3>
+                    <ul>
+                      <li>Coded alot</li>
+                      <li>Know a lot like: blah, blah, blah</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="skillHolder" id="four">  
+                  <div id="skillHead">
+                    <img id="skillImage" src={cool} alt="Java"></img>
+                    <p>Hello</p>
+                  </div>   
+                  <div id="arrowContainer" onClick={() => display("four")}>
+                    <img src={down} id="down" alt="hello"></img>
+                  </div>
+                  <div className="hiddenDiv">
+                    <h3> Proficient</h3>
+                    <ul>
+                      <li>Coded alot</li>
+                      <li>Know a lot like: blah, blah, blah</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="skillHolder" id="five">  
+                  <div id="skillHead">
+                    <img id="skillImage" src={cool} alt="Java"></img>
+                    <p>Hello</p>
+                  </div>   
+                  <div id="arrowContainer" onClick={() => display("five")}>
+                    <img src={down} id="down" alt="hello"></img>
+                  </div>
+                  <div className="hiddenDiv">
+                    <h3> Proficient</h3>
+                    <ul>
+                      <li>Coded alot</li>
+                      <li>Know a lot like: blah, blah, blah</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="skillHolder" id="six">  
+                  <div id="skillHead">
+                    <img id="skillImage" src={cool} alt="Java"></img>
+                    <p>Hello</p>
+                  </div>   
+                  <div id="arrowContainer" onClick={() => display("six")}>
+                    <img src={down} id="down" alt="hello"></img>
+                  </div>
+                  <div className="hiddenDiv">
+                    <h3> Proficient</h3>
+                    <ul>
+                      <li>Coded alot</li>
+                      <li>Know a lot like: blah, blah, blah</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
           </div>
@@ -64,15 +160,21 @@ const About = () => {
             </p>
             <div id = "imageholder">    
                 <figure>
-                  <img src={suitcase} alt='cool' id='skillImage'></img>
+                  <Link to="/project">
+                   <img src={suitcase} alt='cool' id='expImage'></img>
+                  </Link>
                   <figcaption>Skill 1</figcaption>
                 </figure>
                 <figure>
-                  <img src={suitcase} alt='cool' id='skillImage'></img>
+                  <Link to="/project">
+                   <img src={suitcase} alt='cool' id='expImage'></img>
+                  </Link>
                   <figcaption>Skill 1</figcaption>
                 </figure>
                 <figure>
-                  <img src={suitcase} alt='cool' id='skillImage'></img>
+                  <Link to="/project">
+                   <img src={suitcase} alt='cool' id='expImage'></img>
+                  </Link>
                   <figcaption>Skill 1</figcaption>
                 </figure>
             </div>
