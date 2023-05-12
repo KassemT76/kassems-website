@@ -42,9 +42,11 @@ const About = () => {
           <h1>About Me</h1>
           <br></br>
           <div id="desc-container">
-            <p id="desc">I am a high school student at Port Credit Secondary School with a passion 
-            for software enginnering. I have experience with many languages such as Swift, 
-            Javascript, HTML+CSS, Java, Python, and REACT</p>
+            <div id="aboutParagraph">
+              <p id="desc">I am a high school student at Port Credit Secondary School with a passion 
+              for software enginnering. I have experience with many languages such as Swift, 
+              Javascript, HTML+CSS, Java, Python, and REACT</p>
+            </div>
             <img src={reacticon} id="myPic" alt="hello"></img>
           </div>
           <div id="skills">

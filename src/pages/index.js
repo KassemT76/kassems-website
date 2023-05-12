@@ -2,9 +2,6 @@ import React from 'react';
 import '../styles/pages/index.css'
 import cool from '../images/cool.png'
 import { useNavigate } from 'react-router-dom';
-
-
-
   
 export default function Home() {
   const nav = useNavigate()
