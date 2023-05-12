@@ -1,13 +1,24 @@
 import React from 'react';
-import '../styles/pages/home.css'
+import '../styles/pages/index.css'
 import cool from '../images/cool.png'
+import { useNavigate } from 'react-router-dom';
+
+
+
   
-const Home = () => {
+export default function Home() {
+  const nav = useNavigate()
+
+  const  NavigateToProjects = () => {
+    nav("/project")
+  }
+  const NavigateToAbout = () => {
+    nav("/about")
+  }
   return (
    
-    <div id = "home">
-      
-      <h1 id='tit'>Kassem Taha</h1>
+    <div id = "home">   
+      <h1>Kassem Taha</h1>
       <p>A coder with a very impressive website. Wow!</p>
       <br></br>
       <div id = "landing">
@@ -29,7 +40,7 @@ const Home = () => {
               <figcaption>Skill 1</figcaption>
             </figure>
           </div>
-          <button>Learn More!</button>
+          <button onClick={NavigateToAbout}>Learn More!</button>
         </div>
         <div id='projectHome'>
           <h2>Projects</h2>
@@ -48,6 +59,7 @@ const Home = () => {
                 <figcaption>Project 3</figcaption>
               </figure>
           </div>
+          <button onClick={NavigateToProjects}>Learn More!</button>
         </div>
         <div id="footer">
           <h2>Contact me</h2>
@@ -57,5 +69,3 @@ const Home = () => {
     </div>
   );
 };
-  
-export default Home;
