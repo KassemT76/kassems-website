@@ -36,7 +36,7 @@ html{
     border-radius: 20px;
     width: 90%;   
     
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 #card1 {
     grid-row-start: 1;
@@ -63,15 +63,15 @@ html{
     align-items: center;
 
     cursor: pointer;
-    transition: all 1s ease-in-out;
+    transition: all 0.75s ease-in-out;
 }
 .butt:hover {
-    background-color: #B500FF;
+    background-color: #5f00a3;
     width: 17.5%;
 }
 
 .card:hover {
-    background-color: rgb(130, 10, 240)
+    background-color: rgb(75, 9, 167)
 }
 
 .arrow {

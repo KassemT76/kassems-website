@@ -25,15 +25,15 @@ export default function Home() {
           <br></br>
           <div id = "imageholder">    
             <figure>
-              <img src={cool} alt='cool' id='skillImage'></img>
+              <img src={cool} alt='cool' id='skillImageHome'></img>
               <figcaption>Skill 1</figcaption>
             </figure>
             <figure>
-              <img src={cool} alt='cool' id='skillImage'></img>
+              <img src={cool} alt='cool' id='skillImageHome'></img>
               <figcaption>Skill 1</figcaption>
             </figure>
             <figure>
-              <img src={cool} alt='cool' id='skillImage'></img>
+              <img src={cool} alt='cool' id='skillImageHome'></img>
               <figcaption>Skill 1</figcaption>
             </figure>
           </div>
@@ -42,17 +42,17 @@ export default function Home() {
         <div id='projectHome'>
           <h2>Projects</h2>
           <p>Along my journey, I have done a lot of projects</p>
-          <div id="gallery">
+          <div id="imageholder">
             <figure>
-                <img src={cool} alt='cool' id='skillImage'></img>
+                <img src={cool} alt='cool' id='skillImageHome'></img>
                 <figcaption>Project 1</figcaption>
               </figure>
               <figure>
-                <img src={cool} alt='cool' id='skillImage'></img>
+                <img src={cool} alt='cool' id='skillImageHome'></img>
                 <figcaption>Project 2</figcaption>
               </figure>
               <figure>
-                <img src={cool} alt='cool' id='skillImage'></img>
+                <img src={cool} alt='cool' id='skillImageHome'></img>
                 <figcaption>Project 3</figcaption>
               </figure>
           </div>

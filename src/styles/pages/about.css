@@ -1,5 +1,4 @@
 #about {
-    height: 100vh;
     background: rgb(0, 3, 41);
     color: rgb(255,255,255);
     animation-name: opacityChange;
@@ -9,15 +8,25 @@
 #root{
     background: rgb(0, 3, 41);
 }
+#aboutTitle {
+    margin: 0%;
+}
+#tit {
+    margin: 0%;
+    margin-bottom: -1%;
+    padding: 5%;
+}
 #desc-container {
-    background-color:#010436;
+    background-color:#0f124a;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 20px;
 
-    border-top: 5px #020868 double;
-    border-bottom: 5px #020868 double;
+    border: 5px #020868 solid;
+}
+#desc {
+    font-size: 2.5vh;
 }
 #aboutParagraph {
     padding: 20px;
@@ -35,28 +44,40 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    padding: 10px;
+    gap: 20px;
+    padding: 20px;
 }
 #skills {
+    background-color: #000329;
     padding: 10px;
     display: block;
 }
 .skillHolder {
-    background-color: #030C9A;
+    background-color: #ffffff;
     height: 200px;
-    width: 25%;
+    width: 400px;
     display: block;
     overflow: hidden;
-    border: #34c3eb 2px;
+    border: 5px #34c3eb solid;
     border-radius: 5px;
     transition: all 0.5s;
+
+    box-shadow:  13px 13px 26px #000110,
+                -13px -13px 26px #000542;
 }
 #skillHead {
     height: 80%;
+    border-color: #34c3eb;
+    border-width: 5px;
+    border-radius: 5px;
+    padding: 5px;
+}
+#skillImageHolder {
+    height: 110px;
 }
 #skillImage {
-    width: 100px;
+    height: 100%;
+    width: auto;
 }
 #arrowContainer {
     height: 20%;
@@ -94,6 +115,10 @@ li {
 #experience {
     background-color:rgb(1, 4, 54);
     padding: 10px;
+}
+#soft {
+    color: black;
+    font-size: 3vh;
 }
 #expImage {
     width: 100px;
