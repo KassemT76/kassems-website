@@ -11,8 +11,15 @@
     text-align: center;
 }
 #landing {
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    gap: 10vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    
     width: 100%;
-    position: absolute;
     margin-top: 0;
     background-image: url("https://lassonde.yorku.ca/eecs/wp-content/uploads/pexels-photo-2061168-1920x1280.jpeg");
 }
@@ -20,64 +27,118 @@ h1 {
     font-size: 120px ;
 }
 #skillsHome {
-    margin-top: 40vh;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    gap: 50px;
+
     padding: 50px;
     background-color: rgb(0, 3, 41);
+
+    max-width: 90%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+    border: 5px solid white;
+    border-radius: 10%;
 }
 #imageholder {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 50px;
     justify-content: center;
 
-    padding: 10px;
 }
-#skillImageHome {
-    width: 150px;
-    height: auto;
+.skillImageHome {
+    width: auto;
+    height: 200px;
+}
+.animatedfigure {
+    animation: move1 3s ease-in-out infinite;
 }
 figure {
     text-align: center;
-    width: 200px;
+    width: auto;
     height:200px;
     margin: 0%;
 }
+
 figcaption {
-    width: 200px;
+    width: 100%;
     text-align: center;
 }
 button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
     width: 200px;
     height: 50px;
-    background-color: #0ad100;
+    background-color: white;
     font-size: 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    color: aliceblue;
+    color: rgb(0, 3, 41);
+
+    cursor: pointer;
+    border: aliceblue 5px solid;
     border-radius: 10px;
 }
 button:hover {
     background-color: #068000;
 }
 #projectHome {
-    margin-top: 40vh;
     text-align: center;
     padding: 50px;
     background-color: rgb(0, 3, 41);
+
+    max-width: 90%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+    border: 5px solid white;
+    border-radius: 10%;
 }
-#gallery {
-    display: flex;
-    justify-content: center;
+#imageholderProject {
+    display: grid;
 }
-#footer {
-    margin-top: 40vh;
-    text-align: center;
-    padding: 50px;
-    background-color: rgb(0, 3, 41);
-    height: 40vh;
+.projectImageHome {
+    height: 50%;
+    width: 75%;
+}
+.grid1 {
+    grid-row: 1;
+}
+.grid2 {
+    grid-row: 2;
 }
 
+#footer {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(0, 3, 41);
+}
+#contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10pt;
+}
+.linksImage {
+    border: 5px solid antiquewhite ;
+    border-radius: 25%;
+    height: 100px;
+    width: auto;
+
+    background: white;
+}
 @keyframes opacityChange{
     from {opacity: 0%;}
     to {opacity: 100%;}
+}
+@keyframes move1 {
+    0% {transform: translate(-100vw);
+        opacity: 0%;}
+    20%, 80% {transform: translate(0px);
+              opacity: 100%;}   
+    100% {transform: translate(100vw);
+        opacity: 0%;}
 }

@@ -12,7 +12,6 @@ const Navbar = () => {
             <Nav>
             <Icon />
                 <NavMenu>
-                
                     <NavLink to ='/' activeStyle>
                         Home
                     </NavLink>
