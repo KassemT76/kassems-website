@@ -83,7 +83,7 @@ button {
     border-radius: 10px;
 }
 button:hover {
-    background-color: #068000;
+    background-color: #dde0ff;
 }
 #projectHome {
     text-align: center;
@@ -99,16 +99,21 @@ button:hover {
 }
 #imageholderProject {
     display: grid;
+    
 }
 .projectImageHome {
-    height: 50%;
+    height: auto;
     width: 75%;
 }
 .grid1 {
     grid-row: 1;
+    width: 100%;
+    height: auto;
 }
 .grid2 {
     grid-row: 2;
+    width: 100%;
+    height: auto;
 }
 
 #footer {

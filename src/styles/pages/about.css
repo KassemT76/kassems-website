@@ -6,7 +6,7 @@
     text-align: center;
 }
 #root{
-    background: rgb(0, 3, 41);
+    background: #000329;
 }
 #aboutTitle {
     margin: 0%;
@@ -54,7 +54,7 @@
     display: block;
 }
 .skillHolder {
-    background-color: #ffffff;
+    background-image: radial-gradient(circle, white, #c2c2c9, #000542);
     height: 200px;
     width: 400px;
     display: block;
@@ -121,13 +121,14 @@ li {
     color: black;
     font-size: 3vh;
 }
-#expImage {
-    width: 100px;
+.expImage {
+    height: 100px;
+    width: auto;
     transition: all 0.75s;
     cursor: pointer;
 }
-#expImage:hover {
-    width: 200px;
+.expImage:hover {
+    height: 150px;
 }
 @keyframes opacityChange{
     from {opacity: 0%;}

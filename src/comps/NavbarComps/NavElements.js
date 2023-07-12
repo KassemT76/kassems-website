@@ -29,11 +29,12 @@ export const NavLink = styled(Link)`
     background: rgb(21, 24, 54);
   }
   &.active {
-    color: rgb(200, 255, 200);
-    background: rgb(21, 24, 54);
+    color: rgb(200, 200, 255);
+    background: #483f6d;
   }
   text-align: center;
   border: 2px solid white;
+  transition: all 0.5s ease-in;
 `;
   
 export const NavMenu = styled.div`

@@ -22,6 +22,10 @@ import robot from '../images/logo.png'
 import apple from '../images/Apple_logo_grey.svg.png'
 import { Link } from "react-router-dom";
 
+import Mail from '../images/Mail.png'
+import Linkedin from '../images/LinkedIn.png'
+import Github from '../images/GitHub.png'
+
 function display(id){
   
   const parent = document.getElementById(id);
@@ -35,8 +39,7 @@ function display(id){
     head.style.height = "160px";
     arrow.style.height = "40px";
     hide.style.height = "60%";
-
-    hide.style.opacity = "100";
+    hide.style.opacity = "100%";
 
     arrow.childNodes[0].style.transform = "rotate(180deg)";
   } else {
@@ -45,7 +48,6 @@ function display(id){
     arrow.style.height = "40px";
     hide.style.height = "0%";
 
-    hide.style.opacity = "0";
     arrow.childNodes[0].style.transform = "rotate(0deg)";
   }
 
@@ -57,8 +59,6 @@ function displayall() {
   for (let i = 0; i < skills.length; i++){
     display(skills[i].id)
   }
-  console.table(skills)
-
 }
 const About = () => {
     return (
@@ -261,6 +261,7 @@ const About = () => {
                   </div>
                 </div>
               </div>
+              <button onClick={displayall} id="collapseButton">Collapse/Expand</button>
               <h2>Soft Skills</h2>
               <div id="gallery">
                 <div className="skillHolder" id="thirteen">  
@@ -294,7 +295,6 @@ const About = () => {
                     </div>
                 </div>
               </div>
-              <button onClick={displayall}>Collapse</button>
           </div>
           <div id="experience">
             <h2>Experience</h2>
@@ -302,28 +302,38 @@ const About = () => {
             <div id = "imageholder">    
                 <figure>
                   <Link to="/project">
-                   <img src={robot} alt='cool' id='expImage'></img>
+                   <img src={robot} alt='cool' className='expImage'></img>
                   </Link>
                   <figcaption>4659 Warrior Robotix</figcaption>
                 </figure>
                 <figure>
                   <Link to="/project">
-                   <img src={apple} alt='cool' id='expImage'></img>
+                   <img src={apple} alt='cool' className='expImage'></img>
                   </Link>
                   <figcaption>IOS Development</figcaption>
                 </figure>
                 <figure>
                   <Link to="/project">
-                   <img src={suitcase} alt='cool' id='expImage'></img>
+                   <img src={suitcase} alt='cool' className='expImage'></img>
                   </Link>
                   <figcaption>Web Development</figcaption>
                 </figure>
             </div>
           </div>
           <div id="footer">
-            <h2>Contact me</h2>
-            <p>Email: kassemtaha06@gmail.com</p>
+          <p>Contact me</p>
+          <div id="contacts">
+            <a href="mailto:kassemtaha06@gmail.com">
+                <img src={Mail} alt='Email Link' className='linksImage'></img>
+              </a>
+              <Link to="https://www.linkedin.com/in/kassem-taha-b366b422a/">
+                <img src={Linkedin} alt='Linkedin Link' className='linksImage'></img>
+              </Link>
+              <Link to="https://github.com/KassemT76">
+                <img src={Github} alt='Github Link' className='linksImage'></img>
+              </Link>
           </div>
+        </div>
         </div>
     );
 };
