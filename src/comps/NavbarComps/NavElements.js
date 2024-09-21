@@ -1,10 +1,10 @@
 
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
-import icon from '../../images/icon.svg';
+import icon from '../../images/KT.png';
 
 export const Nav = styled.nav`
-  background: rgb(1, 4, 54);
+  background: rgb(43, 48, 58);
   height: 85px;
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@ export const NavMenu = styled.div`
   }
 `;
 export function Icon(){
-  return <img src={icon} alt="a cool icon" width="250" height = "150" style={
+  return <img src={icon} alt="a cool icon" max-width="80" height = "80" style={
     {
       padding: '10px'
     }

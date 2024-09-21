@@ -1,12 +1,12 @@
 #about {
-    background: rgb(0, 3, 41);
+    background: rgb(43, 48, 58);
     color: rgb(255,255,255);
     animation-name: opacityChange;
     animation-duration: 2s;
     text-align: center;
 }
 #root{
-    background: #000329;
+    background: rgb(43, 48, 58);
 }
 #aboutTitle {
     margin: 0%;
@@ -17,7 +17,7 @@
     padding: 5%;
 }
 #desc-container {
-    background-color:#0f124a;
+    background-color:rgb(63, 63, 78);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -28,11 +28,15 @@
 }
 #desc {
     font-size: 2.5vh;
+    text-align: left;
+    width: 80%;
 }
 #aboutParagraph {
     padding: 20px;
 }
 #myPic {
+    width: 20%;
+    height: auto;
     border-style: solid;
     border-width: 2px;
     border-color: #030C9A;
@@ -49,26 +53,24 @@
     padding: 20px;
 }
 #skills {
-    background-color: #000329;
+    background-color: rgb(43, 48, 58);
     padding: 10px;
     display: block;
 }
 .skillHolder {
-    background-image: radial-gradient(circle, white, #c2c2c9, #000542);
+    background-image: radial-gradient(circle, white, #c2c2c9, rgb(43, 48, 58));
     height: 200px;
     width: 400px;
     display: block;
     overflow: hidden;
-    border: 5px #34c3eb solid;
+    border: 5px  solid;
     border-radius: 5px;
     transition: all 0.5s;
 
-    box-shadow:  13px 13px 26px #000110,
-                -13px -13px 26px #000542;
 }
 #skillHead {
     height: 80%;
-    border-color: #34c3eb;
+    border-color: rgb(122, 127, 138);
     border-width: 5px;
     border-radius: 5px;
     padding: 5px;
@@ -83,11 +85,11 @@
 #arrowContainer {
     height: 20%;
     padding: 5px;
-    background-color: #34c3eb;
+    background-color: rgb(223, 223, 223);
     cursor: pointer;
     user-select: none;
 
-    border: #34c3eb 2px;
+    border: rgb(43, 48, 58) 2px;
     border-radius: 5px;
 
 }
@@ -97,7 +99,7 @@
     transition: all 0.5s;
 }
 .hiddenDiv {
-    background-color: #4c53b9;
+    background-color: rgb(43, 48, 58);
     height: 0%;
     width: 100%;
     padding: 5px;
@@ -114,7 +116,7 @@ li {
 }
 
 #experience {
-    background-color:rgb(1, 4, 54);
+    background-color:rgb(43, 48, 58);
     padding: 10px;
 }
 #soft {
